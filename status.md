@@ -50,7 +50,7 @@
 
 - 已提交纯 Python 原型到 `sim/raspbot/prep/`：有界车体/云台动作、240/20/15 Hz 整数步时序、默认视觉观测与真值接口隔离，以及含倾斜棋子的整枚入区判定。
 - 云端 CPU 实跑 `python3 -m unittest -v`，13 项通过。此结果仅覆盖契约、时序与几何，不代表物理、相机或服务器验收。
-- [NVIDIA 当前 Isaac Sim 要求](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/requirements.html) 所列 Linux 验证驱动明显新于计划中的历史 535，且最小显存规格高于本次 12 GiB 试跑目标，不作为当前默认路径。[MuJoCo 3.3.7 Python 包](https://pypi.org/project/mujoco/3.3.7/) 是优先核查候选，软件离屏和 EGL 均需实测；尚未在服务器安装或启动。
+- [NVIDIA 当前 Isaac Sim 要求](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/requirements.html) 所列 Linux 验证驱动明显新于计划中的历史 535，且最小显存规格高于本次 12 GiB 试跑目标，不作为当前默认路径。[MuJoCo 3.3.7 Python 包](https://pypi.org/project/mujoco/3.3.7/) 是优先核查候选，后续已在隔离环境完成 OSMesa 实测（见 SIM-002）；EGL 与 GPU 设备映射仍未验证。
 
 ## 下一步
 
