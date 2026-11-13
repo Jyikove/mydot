@@ -1,0 +1,32 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*.p12
+*.pfx
+*credentials*.json
+*secrets*.json
+
+# Common development artifacts
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+dist/
+build/
+.cache/
+.ipynb_checkpoints/
+*.log
+
+# Large outputs
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.onnx
