@@ -9,18 +9,20 @@
 | 文件或目录 | 用途 | 主要维护者 |
 | --- | --- | --- |
 | [AGENTS.md](AGENTS.md) | Agent 的工作流程、安全边界和交付规范 | 人类审核，Agent 遵守 |
+| [PERSONA.md](PERSONA.md) | Fairy 的完整人设、情绪标签和交流风格 | 人类定义，Dot 采用 |
 | [plan.md](plan.md) | 目标、优先级、任务清单及验收标准 | 人类主导 |
 | [status.md](status.md) | 当前任务、阻塞、下一步和运行记录 | Agent 更新 |
 | [tasks/](tasks/) | 每项任务的独立说明和验收证据 | 人类 / Agent |
 | [logs/](logs/) | 结构化执行日志（不存敏感信息） | Agent |
 | [reports/](reports/) | 阶段总结与最终报告 | Agent |
 | [docs/DOT_START_PROMPT.md](docs/DOT_START_PROMPT.md) | 给 Dot 的首次接入指令 | 人类复制使用 |
+| [docs/FAIRY_CUSTOM_INSTRUCTIONS.md](docs/FAIRY_CUSTOM_INSTRUCTIONS.md) | 适合粘贴至 Dot 设置的短版人设 | 人类复制使用 |
 
 ## 推荐工作流
 
 1. **你**在本地修改 `plan.md`，并提交到 GitHub。
 2. **你**在 Dot 中明确授权 GitHub 访问，并发送 [接入指令](docs/DOT_START_PROMPT.md)。
-3. **Dot**读取 `AGENTS.md`、`plan.md`、`status.md`，确认权限、环境和下一项可执行任务。
+3. **Dot**读取 `AGENTS.md`、`PERSONA.md`、`plan.md`、`status.md`，确认权限、风格、环境和下一项可执行任务。
 4. **Dot / Codex / Work**在已授权的环境中执行任务；把进度、测试证据和产物记录到仓库。
 5. **你**审核需确认的操作、代码 PR 和重要决策，再进入下一阶段。
 
