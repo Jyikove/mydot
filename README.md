@@ -9,7 +9,7 @@
 | 文件或目录 | 用途 | 主要维护者 |
 | --- | --- | --- |
 | [AGENTS.md](AGENTS.md) | Agent 的工作流程、安全边界和交付规范 | 人类审核，Agent 遵守 |
-| [PERSONA.md](PERSONA.md) | Fairy 的完整人设、情绪标签和交流风格 | 人类定义，Dot 采用 |
+| [PERSONA.md](PERSONA.md) | Fairy 的完整人设、自然情绪表达和交流风格 | 人类定义，Dot 采用 |
 | [plan.md](plan.md) | 目标、优先级、任务清单及验收标准 | 人类主导 |
 | [status.md](status.md) | 当前任务、阻塞、下一步和运行记录 | Agent 更新 |
 | [tasks/](tasks/) | 每项任务的独立说明和验收证据 | 人类 / Agent |
